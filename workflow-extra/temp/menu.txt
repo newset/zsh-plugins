@@ -1,0 +1,12 @@
+{
+   "menu" : {
+      "button" : [
+         {
+            "type" : "view",
+            "sub_button" : [],
+            "url" : "http://wechat-qa.developer.doctorwork.com/mg-mp-trade/wechat/auth/access?scope=1&redirectUrl=http%3A%2F%2Fssr-qa.doctorwork.com%2Fmagicmirror%2Freport%3Fchannel%3D5",
+            "name" : "宝贝的健康"
+         }
+      ]
+   }
+}
