@@ -2,7 +2,6 @@
 
 appid=${APP_ID}
 secret=${APP_SECRET:-}
-echo $appid $secret "\n"
 
 if [ -z $appid ]; then
     exit 1

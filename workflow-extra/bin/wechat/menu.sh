@@ -11,7 +11,7 @@ get() {
 
 create() {
     action=menu/create
-    echo `curl https://api.weixin.qq.com/cgi-bin/${action}?${params} -s `
+    echo `curl -X POST -d ${data} https://api.weixin.qq.com/cgi-bin/${action}?${params} -s `
 }
 
 get
