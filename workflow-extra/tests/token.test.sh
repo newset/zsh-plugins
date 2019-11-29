@@ -10,6 +10,6 @@ work_path=$(pwd)
 
 # TOKEN=`ssh root@aliyun-server $(typeset -f run_remote); run_remote`
 
-TOKEN=`cat ./bin/wechat/access_token.sh | ssh www@doctorwork-dev-2 APP_ID=wx2d352d72afc10db6 APP_SECRET=bb57e8b01f4591dcee3fc2493e8adf9f 'bash -s'`
+TOKEN=`cat ./wechat/access_token.sh | ssh www@doctorwork-dev-2 APP_ID=$APP_ID APP_SECRET=$APP_SECRET 'bash -s'`
 
 echo $TOKEN

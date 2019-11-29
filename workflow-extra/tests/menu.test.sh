@@ -8,4 +8,4 @@ export $(grep -v '^#' .env | xargs)
 
 ## json_pp 格式化 json 输出 
 ## python -mjson.tool 中文输出有误
-cat ./bin/wechat/menu.sh | ssh www@doctorwork-dev-2 TOKEN=$TOKEN 'bash -s' | json_pp | tee ./temp/menu.txt | cat
+cat ./wechat/menu.sh | ssh www@doctorwork-dev-2 TOKEN=$TOKEN 'bash -s' | json_pp | tee ./temp/menu.txt | cat

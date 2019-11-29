@@ -9,6 +9,7 @@ arg=$2
 if [ -z $arg ]; then 
     echo "paramete is needed: "
     while read line
+    echo " "
     do
     arg=$line
     break;
@@ -17,10 +18,7 @@ fi
 
 function work() {
 
-    echo bin: $bin
-    echo arg: $arg
-
-    echo $(dirname $0) pwd
+    echo executing: $bin $arg
 
     # touch
     sh $bin.sh $arg
